@@ -1,4 +1,18 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/other_setting">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="show_icon"
+            android:title="@string/pref_show_icon" />
+
+        <Preference
+            android:key="generate"
+            android:title="@string/generate" />
+
+        <Preference
+            android:key="repair"
+            android:title="@string/repair" />
+    </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/luckmoney_setting">
         <SwitchPreference
@@ -81,22 +95,14 @@
             android:defaultValue="false"
             android:key="is_auto_login"
             android:title="@string/pref_enable_autologin" />
-        <!--<SwitchPreference-->
-            <!--android:defaultValue="true"-->
-            <!--android:key="is_break_limit"-->
-            <!--android:title="@string/pref_break_limit" />-->
-    </PreferenceCategory>
-
-
-    <PreferenceCategory android:title="@string/other_setting">
         <SwitchPreference
             android:defaultValue="true"
-            android:key="show_icon"
-            android:title="@string/pref_show_icon" />
-        <Preference
-            android:key="repair"
-            android:title="@string/repair" />
+            android:key="is_break_limit"
+            android:title="@string/pref_break_limit" />
     </PreferenceCategory>
+
+
+
 
     <PreferenceCategory android:title="@string/about">
         <Preference
